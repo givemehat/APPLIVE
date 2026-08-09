@@ -1,1 +1,27 @@
-{"Age": {"Aggressive": 38.875621890547265, "Conservative": 45.375621890547265, "Moderate": 44.71766169154229}, "Monthly_Income": {"Aggressive": 89925.37313432836, "Conservative": 52493.78109452737, "Moderate": 63998.75621890547}, "Investment_Experience": {"Aggressive": 16.5, "Conservative": 12.230099502487562, "Moderate": 13.926616915422885}, "Risk_Tolerance": {"Aggressive": 3.8059701492537314, "Conservative": 2.228855721393035, "Moderate": 2.6865671641791047}, "Investment_Horizon": {"Aggressive": 211.41542288557213, "Conservative": 149.81218905472636, "Moderate": 178.46766169154228}}
+{
+  "Age": {
+    "Aggressive": 38.875621890547265,
+    "Conservative": 45.375621890547265,
+    "Moderate": 44.71766169154229
+  },
+  "Monthly_Income": {
+    "Aggressive": 89925.37313432836,
+    "Conservative": 52493.78109452737,
+    "Moderate": 63998.75621890547
+  },
+  "Investment_Experience": {
+    "Aggressive": 16.5,
+    "Conservative": 12.230099502487562,
+    "Moderate": 13.926616915422885
+  },
+  "Risk_Tolerance": {
+    "Aggressive": 3.8059701492537314,
+    "Conservative": 2.228855721393035,
+    "Moderate": 2.6865671641791047
+  },
+  "Investment_Horizon": {
+    "Aggressive": 211.41542288557213,
+    "Conservative": 149.81218905472636,
+    "Moderate": 178.46766169154228
+  }
+}
