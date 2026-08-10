@@ -8,15 +8,15 @@ A production-ready fintech web app that profiles investor risk using Machine Lea
 
 ## 🚀 Features
 
-| Feature | Details |
-|---|---|
+| Feature                   | Details                                                  |
+| ------------------------- | -------------------------------------------------------- |
 | 🧠 ML Risk Classification | Logistic Regression on 1,200+ synthetic investor records |
-| 📋 7-Question Smart Form | Sliders, dropdowns, radio buttons — no typing needed |
-| 📊 4 Interactive Charts | Gauge, Pie, Probability Bar, Profile Comparison |
-| 🤖 AI Advice | GPT-3.5 personalized advice (with smart fallback) |
-| 📄 PDF Report | Download full report with allocations + AI advice |
-| 🗄️ SQLite Database | Stores every profile, viewable in Admin Dashboard |
-| 🛠️ Admin Panel | Charts + full data table of all past profiles |
+| 📋 7-Question Smart Form  | Sliders, dropdowns, radio buttons — no typing needed     |
+| 📊 4 Interactive Charts   | Gauge, Pie, Probability Bar, Profile Comparison          |
+| 🤖 AI Advice              | GPT-3.5 personalized advice (with smart fallback)        |
+| 📄 PDF Report             | Download full report with allocations + AI advice        |
+| 🗄️ SQLite Database        | Stores every profile, viewable in Admin Dashboard        |
+| 🛠️ Admin Panel            | Charts + full data table of all past profiles            |
 
 ---
 
@@ -62,6 +62,7 @@ streamlit run app.py
 ```
 
 The app will **automatically**:
+
 - Generate the dataset (`dataset.csv`)
 - Train and save the model (`risk_model.pkl`)
 - Initialize the database (`profiles.db`)
@@ -72,37 +73,39 @@ No manual steps needed.
 
 ## 🧠 ML Model Details
 
-| Property | Value |
-|---|---|
-| Algorithm | Logistic Regression (+ Decision Tree fallback) |
-| Training Samples | 1,200 synthetic investor profiles |
-| Features | Age, Income, Experience, Risk Tolerance, Horizon, Goal, Behavior |
-| Target Classes | Conservative / Moderate / Aggressive |
-| Encoder | LabelEncoder (for categorical features) |
-| Evaluation | Accuracy Score + Classification Report |
-| Storage | `joblib` → `risk_model.pkl` |
+| Property         | Value                                                            |
+| ---------------- | ---------------------------------------------------------------- |
+| Algorithm        | Logistic Regression (+ Decision Tree fallback)                   |
+| Training Samples | 1,200 synthetic investor profiles                                |
+| Features         | Age, Income, Experience, Risk Tolerance, Horizon, Goal, Behavior |
+| Target Classes   | Conservative / Moderate / Aggressive                             |
+| Encoder          | LabelEncoder (for categorical features)                          |
+| Evaluation       | Accuracy Score + Classification Report                           |
+| Storage          | `joblib` → `risk_model.pkl`                                      |
 
 ---
 
 ## 📊 Risk Categories
 
-| Profile | Description | Portfolio |
-|---|---|---|
-| 🟢 Conservative | Prioritizes capital safety | 70% Bonds, 20% ETF, 10% Gold |
-| 🟡 Moderate | Balances growth and safety | 50% Stocks, 30% ETF, 20% Bonds |
-| 🔴 Aggressive | Maximizes growth potential | 80% Stocks, 15% Crypto, 5% ETF |
+| Profile         | Description                | Portfolio                      |
+| --------------- | -------------------------- | ------------------------------ |
+| 🟢 Conservative | Prioritizes capital safety | 70% Bonds, 20% ETF, 10% Gold   |
+| 🟡 Moderate     | Balances growth and safety | 50% Stocks, 30% ETF, 20% Bonds |
+| 🔴 Aggressive   | Maximizes growth potential | 80% Stocks, 15% Crypto, 5% ETF |
 
 ---
 
 ## 🌐 Deployment
 
 ### Streamlit Cloud (Free)
+
 1. Push to GitHub
 2. Go to [streamlit.io/cloud](https://streamlit.io/cloud)
 3. Connect repo → Deploy
 4. Add `OPENAI_API_KEY` in Secrets
 
 ### Hugging Face Spaces
+
 1. Create a new Space → Select Streamlit SDK
 2. Upload all files
 3. Add API key in Settings → Secrets
