@@ -4,6 +4,6 @@ pandas==3.0.5
 numpy==1.26.4
 plotly==5.22.0
 openai==1.35.0
-python-dotenv==1.0.1
+python-dotenv==1.2.3
 joblib==1.5.3
 fpdf2==2.7.9
